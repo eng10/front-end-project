@@ -3,8 +3,8 @@ import Navbar from '../components/utils/navbar/Navbar'
 import Footer from '../components/utils/footer/Footer'
 import Home from '../pages/pages/home/Home'
 import { createBrowserRouter,Outlet } from 'react-router-dom'
-import Login from '../pages/pages/user/Login'
-import SingIn from '../pages/pages/user/SingIn'
+// import Login from '../pages/pages/user/Login'
+// import SingIn from '../pages/pages/user/SingIn'
 import Footers from '../components/utils/footer/Footer'
 
 const Router = () => {
@@ -28,14 +28,14 @@ export const router = createBrowserRouter([
                 index : true,
                 element: <Home/>
             },
-            {
-                path: "login",
-                element:<Login/>
-            },
-            {
-                path:"register",
-                element:<SingIn/>
-            }
+            // {
+            //     path: "login",
+            //     element:<Login/>
+            // },
+            // {
+            //     path:"register",
+            //     element:<SingIn/>
+            // }
         ]
     }
 ])

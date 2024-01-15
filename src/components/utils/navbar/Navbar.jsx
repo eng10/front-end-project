@@ -3,13 +3,11 @@ import { BiCategory } from 'react-icons/bi'
 import { BsCart3 } from 'react-icons/bs'
 import { FaRegUser } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
-import { useDispatch, useSelector } from 'react-redux'
-import { allCateFn } from '../../../redux/slices/category/Allcategory'
-import { LiaUserCircleSolid } from 'react-icons/lia'
+// import { useDispatch, useSelector } from 'react-redux'
+// import { allCateFn } from '../../../redux/slices/category/Allcategory'
+// import { LiaUserCircleSolid } from 'react-icons/lia'
 import { RxDashboard } from 'react-icons/rx'
 import { HiOutlineLogout } from 'react-icons/hi'
-import { logOut } from '../../../redux/slices/user/userInfo'
-import { DownOutlined, SmileOutlined } from '@ant-design/icons'
 import { Dropdown, Space } from 'antd'
 
 const Navbar = () => {
@@ -19,10 +17,6 @@ const Navbar = () => {
   const allcategory = [
     {type:"computers"},
   ]
-  const dispatch = useDispatch()
-  useEffect(() => {
-    dispatch(allCateFn())
-  }, [])
 
   const userInfo = {email:"cabdullah",role:"Admim",fullname:"cabdullah"}
   const type = allcategory.map((cate) => cate.type)
